@@ -1,0 +1,4 @@
+{
+  "nomral_format": "现在{tz_name}时间{now.hour}点整啦！你的绳命又减少了3560秒。",
+  "moha_format": "现在{tz_name}时间{now.hour}点整啦！你的绳命又减少了3560秒。"
+}

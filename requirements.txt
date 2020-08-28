@@ -1,0 +1,5 @@
+nonebot
+Pillow
+googletrans
+bs4
+json

@@ -1,4 +1,4 @@
-## bronya-bot
+# bronya-bot
 
 bronya-bot，崩坏 3 布洛妮娅机器人。
 

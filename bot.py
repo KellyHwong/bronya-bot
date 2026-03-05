@@ -1,23 +1,21 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# Author: Kelly Hwong
-# Date: Feb 19th, 2019
+# @Date    : 2019/02/19
+# @Author  : Kelly Hwong
+# @Desc    : NoneBot2 project with OneBot V11 adapter
 
-import os
-
-import config
 import nonebot
+from nonebot.adapters.onebot.v11 import Adapter as ONEBOT_V11Adapter
 
+nonebot.init()
 
-def main():
-    nonebot.init(config)
-    nonebot.load_builtin_plugins()
-    nonebot.load_plugins(
-        os.path.join(os.path.dirname(__file__), "bronya", "plugins"), "bronya.plugins"
-    )
-    nonebot.run()
+driver = nonebot.get_driver()
+driver.register_adapter(ONEBOT_V11Adapter)
 
+# 加载内置插件
+nonebot.load_builtin_plugins("echo")
+# 加载自定义插件
+nonebot.load_plugins("bronya_bot/plugins")
 
 if __name__ == "__main__":
-    main()
-    main()
+    nonebot.run()

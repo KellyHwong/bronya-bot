@@ -6,8 +6,10 @@
 
 import nonebot
 from nonebot.adapters.onebot.v11 import Adapter as ONEBOT_V11Adapter
+from bronya_bot.services.sqlite.sqlite_service import init_sqlite_db
 
 nonebot.init()
+init_sqlite_db()
 
 driver = nonebot.get_driver()
 driver.register_adapter(ONEBOT_V11Adapter)

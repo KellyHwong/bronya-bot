@@ -10,11 +10,9 @@ url = "http://127.0.0.1:8000/chat"
 
 async def chat_api_session(model_name: str, messages: list) -> dict:
     """
-    Args:
-        model_name: str
-        messages: list of dict
-    Return:
-        dict
+    :param model_name: str
+    :param messages: list of dict
+    :return: dict
     """
     data = {
         "model_name": model_name,
